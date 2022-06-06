@@ -482,11 +482,52 @@ a {
         
         
       }
+.logoanimacion{
+	width: 100px;
+	
+	animation-name: logo-animacion;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+	animation-delay: 3s;
 
 
+}
+
+.textilesanimacion{
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) alternate both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) ;
+}
+/*animaciones*/
+@keyframes logo-animacion{
+	0%{ width: 100px;}
+	0.2s{ width: 50px;}
+	25%{ width:300px;}
+	50%{ width: 200px;}
+	75%{ width: 300px;}
+	100%{ width: 100px;}
+}
     
-   
-
+@-webkit-keyframes scale-up-center {
+	0% {
+	  -webkit-transform: scale(0.5);
+			  transform: scale(0.5);
+	}
+	100% {
+	  -webkit-transform: scale(1);
+			  transform: scale(1);
+	}
+  }
+  @keyframes scale-up-center {
+	0% {
+	  -webkit-transform: scale(0.5);
+			  transform: scale(0.5);
+	}
+	100% {
+	  -webkit-transform: scale(1);
+			  transform: scale(1);
+	}
+  }
 
 
 
