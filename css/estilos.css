@@ -482,6 +482,11 @@ a {
         
         
       }
+	  /*animaciones*/
+
+	  .contacto-gradiente{
+		background-image: linear-gradient(to left, whitesmoke,rgb(255, 194, 153));
+	}
 .logoanimacion{
 	width: 100px;
 	
