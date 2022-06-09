@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Brodeco</title>
   <link rel="stylesheet" href="./css/estilos.css">
- </header>
+ </head>
  
    <header class="header">
-    <body>
       <nav class="navBar">
       
         <a href=""><img class="logo logoanimacion" src="./BroDeco/129016884_102286145073293_2212359157108283822_n.jpg" alt="Logo de la marca"></a>
@@ -24,21 +24,44 @@
         <script src="https://kit.fontawesome.com/c633259a8d.js" crossorigin="anonymous"></script> 
       </ul>
       </nav>
-    </body>
-  
       </header>
-  
-
-<!--quienes somos--> <!--quienes somos-->
+    <body>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./BroDeco/rayasazules2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./BroDeco/rayasazules.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./BroDeco/rayasrosas.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+     <!--quienes somos--> <!--quienes somos-->
 <main>
   <section class="cardContainer">
-    <div class="card">
+    <div class="card col-6">
      
     <img src="./BroDeco/guga.jpg" alt="">
     <h2 class="parrafo">Maria Agustina</h2>
     <p class="parrafo">Agus, la cabeza pensante, la de las ideas, ama innovar y dejarse llevar, que esta presente en cada detalle</p>
     </div>
-    <div class="card">
+    <div class="card col-6">
       <img src="./BroDeco/Marita.jpg" alt="">
       <h2 class="parrafo">Mari del carmen</h2>
       <p class="parrafo">Ella es Marita, la que con sus manos elabora con amor nuestros tejidos, dejando en ellos un poquito de su escencia en cada uno de nuestros productos</p>
@@ -47,45 +70,24 @@
   </section>
  
 
-<!--algunos productos-->
 
-<div>
-  <div class="column">
-    <img src="./BroDeco/rayasrosas.jpg" alt="">
-    <h2>Manta-Almohadon</h2>
-    <p class="parrafo">Lana combinada de dos colores 1,45 x 0.75 mts</p>
-  </div>
+ 
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    </body>
   
-  <div class="column">
-    <img src="./BroDeco/rayasazules.jpg" alt="">
-    <h2>Manta-Almohadon</h2>
-    <p class="parrafo">Lana combinada de dos colores 1,45 x 0.75 mts</p>
-  </div>
-    <div class="row">
-    <div class="column">
-      <img src="./BroDeco/rayasazules2.jpg" alt="">
-      <h2>Manta-Almohadon</h2>
-      <p class="parrafo">Lana combinada de dos colores 1,45 x 0.75 mts</p>
-    </div>
-    </div>
-  <p>compras</p>
   
 
 
-
-  
-</main>
-
- <br><br><br><br>
  <!--footer-->
-<footer>
- <button class="footer"><a class="fa-brands fa-instagram" href="https://www.instagram.com/brodecolp/"></a></button>
- <button class="footer"><a class="fa-brands fa-facebook-f" href="https://www.facebook.com/search/top?q=brodeco"></a></button> 
+<footer class="site-footer text-white text-center bg-dark pt-4">
+  <h4>Redes Sociales</h4>
+  <div class="iconos">
+    <a href="https://www.instagram.com/brodecolp/"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://www.facebook.com/search/top?q=brodeco"><i class="fa-brands fa-facebook"></i></a>
+  </div>
+ 
 </footer>
 
 
 </html>
 
-git remote add origin https://github.com/angieeferradesarrollo/ProyectoBrodeco.git
-git branch -M master
-git push -u origin master

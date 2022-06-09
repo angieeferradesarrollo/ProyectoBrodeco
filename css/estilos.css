@@ -535,7 +535,29 @@ a {
   }
 
 
+/*boottstrap*/
 
-  
+.carousel-inner img {
+	
+	width: 400px;
+    
+	height: 400px;
 
  
+
+  
+  }
+  .site-footer{
+	  height: 100px;
+  }
+  .icons a{
+	  text-decoration: none;
+	  color: white;
+	  margin: 10px;
+	  font-size: 20px;
+  }
+  .icons a i :hover{
+	  color: aqua;
+	  transform: scale(1.1);
+	  transition: ease-in-out .1s;
+  }
