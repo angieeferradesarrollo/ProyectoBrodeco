@@ -569,9 +569,7 @@ a {
 	  transform: scale(1.1);
 	  transition: ease-in-out .1s;
   }
-  .img-fluid img{
-	height: 50px;
-  }
+ 
    
   /*Pseudo-element*/
   h4::before{
