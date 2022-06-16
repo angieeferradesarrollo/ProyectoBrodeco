@@ -1,31 +1,27 @@
-*{margin: 0%
-;padding: 0%;
-box-sizing: border-box;
-}
-html{
-  height: 100px
-}
-@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
+*{margin:o%;
+	padding: 0%;
+	box-sizing: border-box;}
 
-/* logo*/
-
-.logo{
-  width: 100px;
-  position: fixed;
-  top: 0px;
-  border-radius: 15px;
-  z-index: 100px;
-  left: 0px;
-  margin-top: 0%;
-  height: 100px;
-}
-.header {justify-content: end;
-    background-color: white;
-   text-align: end;
-    padding: 0px;
-  }
-
-
+	html{
+		height: 100px
+	  }
+	  @import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
+	  .logo{
+		width: 100px;
+		position: fixed;
+		top: 0px;
+		border-radius: 15px;
+		z-index: 100px;
+		left: 0px;
+		margin-top: 0%;
+		height: 100px;
+	  }
+	  .header {justify-content: end;
+		  background-color: white;
+		 text-align: end;
+		  padding: 0px;
+		}
+			
 
 
 .navBar{justify-content: flex-end;
