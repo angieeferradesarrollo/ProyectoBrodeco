@@ -1,0 +1,49 @@
+.header {justify-content: end;
+    background-color: white;
+   text-align: end;
+    padding: 0px;
+    .navBar{justify-content: flex-end;
+    height: 50px;
+    text-align: center;
+    top: 0px;
+    left: 0;
+    display: flex;
+    left: 0px;
+    margin: 0px;
+    position: relative;
+    background-color: white;
+    font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif
+    
+  
+  } .fuente30{font-size: 15px;
+    background-color: transparent;
+    border-radius: 20px;
+    font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+    text-decoration-color: gray;
+    
+    }
+  }
+.cardContainer{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  
+    .card{width: 300px;
+    padding: 1rem 2rem;
+    margin: 30px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  
+  .parrafo{
+      background-color: transparent;
+      justify-content: center;
+      font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+      margin-top: 50px;
+      color: grey;
+  }
+  }
+  }
