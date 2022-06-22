@@ -1,120 +1,179 @@
-@import"./parciales/logos";
-@import"./parciales/cartas";
-@import"./parciales/reser"
-
-
-
-
-li{ 
-  display: inline; margin: 0 15px;
-}
-a { background-color: transparent;
-  text-decoration: none;
-  color: black;
-}
-
-
- /* cartas*/
-
-
+@import "./basicos/resets";
+@import "./basicos/basicos";
+@import "./parciales/nav";
+@import "./parciales/header";
+@import "./parciales/main";
+.img{ height: 100px;
+	
+  border-radius: 15px;}
   
 
-.carousel-inner img {
+  
+  
+  
+
+
+/*navbar*/
+
+.parrafo{
+  justify-content: center;
+  font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+  margin-top: 50px;
+  color: grey;
+}
+/*LOGO*/
+
+/*carousel-inner*//*boottstrap*/
+.carousel-inner img{
+	width: 300px;
     
-  width: 300px;
-  
-  height: 500px;
-
-
-
-
+	height: 500px;
 }
+
 .site-footer{
-    height: 100px;
+  height: 100px;
 }
 .icons a{
-    text-decoration: none;
-    color: white;
-    margin: 10px;
-    font-size: 20px;
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+  font-size: 20px;
 }
 .icons a i :hover{
-    color: aqua;
-    transform: scale(1.1);
-    transition: ease-in-out .1s;
+  color: aqua;
+  transform: scale(1.1);
+  transition: ease-in-out .1s;
 }
 
  
-/*Pseudo-element*/
-h4::before{
-  content: " $ ";
+
+/*DatosdeContacto*/
+.contacto-gradiente{
+
 }
-/*Pseudo-clases*/
-a:visited{
-  color: brown;
+/*Decoracion-Frascos*/
+
+
+/*Difusores*/
+
+
+/*Almohadones*//*Mantas*/
+.almohadones{
+
 }
-a:hover{
-  color: blanchedalmond;
+.container{
+
 }
-/*nav bar media querie*/
+
+
+/*Media querie*/
 @media screen and (min-width:1200px) {
-  .navbar{justify-content: flex-end;
-  top: 0;
+  .navbar{justify-content: end;
+  text-align: center;
+  top: 0x;
   left: 0;
   display: flex;
   left: 0px;
   margin: 0px;
   position: relative;
-  background-color: rgba(204, 159, 119, 0.882);
+  background-color: white;
   font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif
 }
   
 }
+
 @media screen and (max-width:480px){
   .header {flex-direction: column;
   }
-  .navBar { justify-content: center;
+  .navBar { justify-content: end;
     width: 500px;
   }
   .logo{width: 50px;
     height: 50px;
   }
-}
-
-/* columnas index */
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 100px;
   
 }
+@media screen and (min-width:1200px){
+.logo{
+  justify-content: center;
+}
+}
 @media screen and  (min-width:1200px){
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 100px;
+	.column {
+		float: left;
+		width: 33.33%;
+		padding: 100px;
 }
 }
 
 @media screen and  (max-width:480px){
-.column {
-  
-  width: 33.33%;
-  padding: 50px;
-  
+	.column {
+		
+		width: 33.33%;
+		padding: 50px;
+		
 }
 }
 
-body {
-	font-family: 'Roboto Condensed', sans-serif;
-	font-weight: 300px;
+
+
+/*mis media queries- min-width: desde/ / max-width: hasta*/
+@media screen and (min-width: 1200px){
+.contenedor { background-color: white;
+	grid-template-areas:
+		' header         header      header	'
+		'	destacado	destacado 	destacado'
+		'	contenido	contenido 	aside '
+		'	 footer		footer 		footer';
+}
+}
+@media screen and (max-width: 480px)
+{
+	.contenedor{
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			'destacado'
+			'contenido '
+			'aside'
+			'footer';
+	}
 	
 }
+/*---------- FOOTER ----------*/
+.footer{
+  background-color: black;
+  text-align: center;
 
-img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
+  
+  
 }
-
-
+/*animaciones*/
+@keyframes logo-animacion{
+	0%{ width: 100px;}
+	
+	25%{ width:300px;}
+	50%{ width: 200px;}
+	75%{ width: 300px;}
+	100%{ width: 100px;}
+}
+    
+@-webkit-keyframes scale-up-center {
+	0% {
+	  -webkit-transform: scale(0.5);
+			  transform: scale(0.5);
+	}
+	100% {
+	  -webkit-transform: scale(1);
+			  transform: scale(1);
+	}
+  }
+  @keyframes scale-up-center {
+	0% {
+	  -webkit-transform: scale(0.5);
+			  transform: scale(0.5);
+	}
+	100% {
+	  -webkit-transform: scale(1);
+			  transform: scale(1);
+	}
+  }

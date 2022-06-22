@@ -1,0 +1,17 @@
+.cardContainer{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .card{
+    width: 300px;
+    padding: 1rem 2rem;
+    margin: 30px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  }
+  

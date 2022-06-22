@@ -15,7 +15,7 @@
 		left: 700px;
 		margin-top: 0%;
 		height: 100px;
-		
+		justify-content: center;
 	  }
 	  .header {justify-content: end;
 		  background-color: white;
@@ -40,7 +40,7 @@
 }
 /*nav bar media querie*/
     @media screen and (min-width:1200px) {
-		.navbar{justify-content: end;
+		.navbar{justify-content: center;
 		text-align: center;
 		top: 0x;
 		left: 0;
@@ -57,8 +57,8 @@
 	@media screen and (max-width:480px){
 		.header {flex-direction: column;
 	  }
-		.navBar { justify-content: end;
-			width: 500px;
+		.navBar { justify-content: center;
+			width: 300px;
 		}
 		.logo{width: 50px;
 			height: 50px;
@@ -66,32 +66,21 @@
 		
 	}
 	@media screen and (min-width:1200px){
-	.logo{
+	.logo{left: 0%;
 		justify-content: center;
 	}
 	}
-/* columnas index */
-  .column {
-    float: left;
-    width: 33.33%;
-    padding: 100px;
-    
-  }
-@media screen and  (min-width:1200px){
-	.column {
-		float: left;
-		width: 33.33%;
-		padding: 100px;
-}
-}
+@media screen and  (min-width: 768px){
+	.navBar{margin-top: 0%;
+	justify-content: end;
+height: 0%;}
 
-@media screen and  (max-width:480px){
-	.column {
-		
-		width: 33.33%;
-		padding: 50px;
-		
+.logo{
+	margin-top: 0%;
+	justify-content: center;
+	left: 50%;
 }
+	
 }
 .cardContainer{
     padding: 50px;
@@ -123,14 +112,10 @@ text-decoration-color: gray;
 
 
 li{ 
-    display: inline; margin: 0 15px;
+    display: inline; margin: 0 15px;margin-top: 0%;
 }
 
 
-a { background-color: transparent;
-    text-decoration: none;
-    color: black;
-}
 
 .img{ height: 100px;
 	
@@ -139,15 +124,6 @@ border-radius: 15px;}
 section{ text-align: center; width: ;}
 
 
-.blog{
-   display: flex;
-
-}
-
-.blog div{
-    display: flex;
-flex-direction: column;
-justify-content: center;}
 
 p::first-letter{
 	color: black;
@@ -157,84 +133,14 @@ p::first-letter{
     .parrafo{
         background-color: transparent;
         justify-content: center;
-        font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+		color: rgb(38, 38, 38); 
+		font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif; 
+		font-size: 16px;
         margin-top: 50px;
         color: grey;
     }
 
-    /*Cartas grid Mantas*/
-	.contenedor-mantas{
-
-        height: 100vh;
-		display: grid;
-		grid-template-columns: 15% auto 75%;
-		grid-template-rows: 0px 1fr 1fr 25px;
-		grid-template-areas:
-			'nav		   nav   	    nav '
-			'inicio        inicio       inicio '
-			'informacion   productos 	productos'
-			'footer        footer       footer';
-			
-		
-	}
-	/*Grid Mantas*/
-	nav{
-		grid-area: nav;
-		height: 20px;
-		justify-content: flex-end;
-	
-	
-		
-	}
-	
-
-header{
-grid-area: inicio;
-
-
-
-}
-
-section{
- grid-area: productos;
-}
-
-aside{
-	grid-area: informacion;
-	background-color: white;
-}
-footer{
-	grid-area: footer;
-} 
-
-
-/*mis media queries MANTAS- min-width: desde/ / max-width: hasta*/
-@media screen and (min-width: 1200px){
-	.contenedor-mantas { background-color: whitesmoke;
-		grid-template-areas:
-		'nav		   nav   	    nav '
-		'inicio        inicio       inicio '
-		'informacion   productos 	productos'
-		'footer        footer       footer';
-	}
-	}
-	@media screen and (max-width: 480px)
-	{
-		.contenedor-mantas{
-			grid-template-columns: 0.5fr;
-			grid-template-areas:
-			'nav		nav    '
-			"productos"
-			"footer";
-		}
-		
-	}
-
-.cartamantas{
-	height: 50px;
-	gap: 20px;
-}
-
+   
 /*grid almohadones*/
 
 
@@ -256,10 +162,10 @@ a {
 
 .contenedor {
 	width: 100%;
-	max-width: px;
-	margin: 0px auto;
+	max-width: 1300px;
+	margin: 20px auto;
 	display: grid;
-	grid-gap: 0px;
+	grid-gap: 20px;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(4, auto);
 	grid-template-areas:
@@ -273,7 +179,7 @@ a {
 @media screen and (min-width: 1200px){
 .contenedor { background-color: white;
 	grid-template-areas:
-		'    header     header      header	'
+		' header         header      header	'
 		'	destacado	destacado 	destacado'
 		'	contenido	contenido 	aside '
 		'	 footer		footer 		footer';
@@ -284,21 +190,16 @@ a {
 	.contenedor{
 		grid-template-columns: 1fr;
 		grid-template-areas:
-			'header'
-			'contenido contenido'
-			''
+			'destacado'
+			'contenido '
+			'aside'
 			'footer';
 	}
 	
 }
 
 /* ---------- HEADER ----------*/
-.header2 {
-	grid-area: header;
-	padding: 10px;
-	background: #fff;
-	
-}
+
 .imgdifusores{
 	width: 50%;
 	height: 100%;
@@ -316,48 +217,74 @@ a {
 .articulo {
 	display: flex;
 	background: #fff;
-	box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
+	box-shadow: 0px 0px 70px rgba(152, 20, 20, 0.2);
 }
 
-.articulo .contenedor-texto {
-	padding: 0px;
-	width: 50%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	width: 100%;
-}
 
 .articulo .contenedor-thumbnail {
 	width: 50%;
 	
 }
 
-.articulo .titulo {
-	margin-bottom: 10px;
-	font-size: 25px;
-}
 
-.articulo .titulo a {
-	font-weight: 300;
-	color: #000s;
-}
 
-.articulo{
-	font-size: 16px;
-	color: black;
-	margin-bottom: 10px;
-}
 
-.articulo .extracto {
-	font-size: 20px; 
-	line-height: 25px; 
-	font-weight: 300;
-	margin-bottom: 10px; 
-	color: black;
-}
+
+
+
+
 
 /* ---------- Articulo Destacado ----------*/
+
+.articulo.destacado .contenedor-thumbnail {
+    min-height: 40%;
+    width: 0%;
+}
+
+.articulo.destacado .contenedor-thumbnail a {
+    display: inline-block;
+    width: 50%;
+    height: 500%;
+}
+
+.destacado .titulo a {
+    color: #fff;
+}
+
+.destacado .titulo::after {
+    content:normal;
+    margin: 0.100em 10; 
+    display: block;
+    background-color: #868686;
+    width: 6em; 
+    height: 1px;
+}
+
+/*---------- CONTENIDO ----------*/
+.contenido {
+    grid-area: contenido;
+    display: grid;
+    grid-template-columns: 1;
+    grid-gap: 20px; 
+}
+
+/*---------- SIDEBAR ----------*/
+.sidebar {
+    padding: 0.3em 10px; 
+    text-align:center;
+    min-height: 50px; 
+    grid-area: aside;
+    background:#fff;
+    color: black;
+}
+
+.sidebar img {
+    border-radius: 100%;
+    height: 20em; 
+    width: 20em; 
+    margin-bottom: 25px; 
+}
+
 
 
 .destacado .titulo a {
@@ -369,12 +296,12 @@ a {
 	grid-area: contenido;
 	display: grid;
 	grid-template-columns: 1;
-	grid-gap: 10px; 
+	grid-gap: 5px; }
 
 
 
 /*---------- FOOTER ----------*/
- .footer {
+ .footer{
         background-color: black;
         text-align: center;
         padding top: 100px;
@@ -384,11 +311,11 @@ a {
 	  /*animaciones*/
 
 	  .contacto-gradiente{
-		background-image: linear-gradient(to left, whitesmoke,rgb(224, 212, 212));
+		background-color: linear-gradient(to left, whitesmoke #212529 (224, 212, 212));
 	}
 .logoanimacion{
 	width: 100px;
-	position: fixed;
+	position: absolute;
 	animation-name: logo-animacion;
 	animation-iteration-count: 1;
 	animation-timing-function: ease-in;
@@ -398,10 +325,7 @@ a {
 
 }
 
-.textilesanimacion{
-	-webkit-animation: scale-up-center 10s cubic-bezier(0.390, 0.575, 0.565, 1.000) alternate both;
-	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) ;
-}
+
 /*animaciones*/
 @keyframes logo-animacion{
 	0%{ width: 100px;}
@@ -468,8 +392,8 @@ a {
   }
   /*Pseudo-clases*/
   a:visited{
-	color: brown;
+	color: gray;
   }
   a:hover{
-	color: blanchedalmond;
+	color: rgb(60, 39, 8);
   }
