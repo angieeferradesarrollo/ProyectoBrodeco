@@ -313,17 +313,7 @@ a {
 	  .contacto-gradiente{
 		background-color: linear-gradient(to left, whitesmoke #212529 (224, 212, 212));
 	}
-.logoanimacion{
-	width: 100px;
-	position: absolute;
-	animation-name: logo-animacion;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
-	animation-duration: 2s;
-	animation-delay: 3s;
 
-
-}
 
 
 /*animaciones*/
@@ -379,11 +369,7 @@ a {
 	  margin: 10px;
 	  font-size: 20px;
   }
-  .icons a i :hover{
-	  color: aqua;
-	  transform: scale(1.1);
-	  transition: ease-in-out .1s;
-  }
+ 
  
    
   /*Pseudo-element*/
