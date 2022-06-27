@@ -10,10 +10,9 @@
   p{
 	@if ($color == black) {
 		color:grey
-	} @else{
-		color: $Tipografia
+	} 
 	}
-  }
+  
   
   .site-footer{
 	height: 100px;
@@ -24,11 +23,16 @@
 	margin: 10px;
 	font-size: 20px;
   }
-  .icons a i :hover{
+  .icons a :hover{
 	color: rgb(255, 136, 0);
 	transform: scale(1.1);
 	transition: ease-in-out .1s;
   }
+ .envios{
+	background-color: grey;
+	color: aliceblue;
+ }
+
   
   
   
@@ -41,121 +45,11 @@
 
 
 
-/*Media querie*/
-@media screen and (min-width:1200px) {
-  .navbar{justify-content: end;
-  text-align:end;
-  top: 0x;
-  left: 0;
-  display: flex;
-  left: 0px;
-  margin: 0px;
-  position: relative;
-  background-color: white;
-  font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif
-}
+
   
-}
-@media only screen and (min-width: 600px){
-	.navbar{justify-content: end;
-		text-align:end;
-		top: 0x;
-		left: 0;
-		display: flex;
-		left: 0px;
-		margin: 0px;
-		position: relative;
-		background-color: white;
-		font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;}
-}
-
-
-@media screen and (max-width:480px){
-  .header {flex-direction: column;
-  }
-  .navBar { justify-content: end;
-    
-  }
-  .logo{
-	justify-content: start;
-  }
-  
-}
-@media screen and (min-width:1200px){
-.logo{
-  justify-content: start;
-}
-}
-@media screen and  (min-width:1200px){
-	.column {
-		float: left;
-		width: 33.33%;
-		padding: 100px;
-}
-}
-
-@media screen and  (max-width:480px){
-	.column {
-		
-		width: 33.33%;
-		padding: 50px;
-		
-}
-}
-
-
-
-/*mis media queries- min-width: desde/ / max-width: hasta*/
-@media screen and (min-width: 1200px){
-.contenedor { background-color: white;
-	grid-template-areas:
-		' header         header      header	'
-		'	destacado	destacado 	destacado'
-		'	contenido	contenido 	aside '
-		'	 footer		footer 		footer';
-}
-}
-@media screen and (max-width: 480px)
-{
-	.contenedor{
-		grid-template-columns: 1fr;
-		grid-template-areas:
-			'destacado'
-			'contenido '
-			'aside'
-			'footer';
-	}
+  h1{
+	color: rgb(33, 22, 9);
+	align-items: center;
 	
-}
-
-/*animaciones*/
-@keyframes logo-animacion{
-	0%{ width: 100px;}
-	
-	25%{ width:300px;}
-	50%{ width: 200px;}
-	75%{ width: 300px;}
-	100%{ width: 100px;}
-}
-    
-@-webkit-keyframes scale-up-center {
-	0% {
-	  -webkit-transform: scale(0.5);
-			  transform: scale(0.5);
-	}
-	100% {
-	  -webkit-transform: scale(1);
-			  transform: scale(1);
-	}
   }
-  @keyframes scale-up-center {
-	0% {
-	  -webkit-transform: scale(0.5);
-			  transform: scale(0.5);
-	}
-	100% {
-	  -webkit-transform: scale(1);
-			  transform: scale(1);
-	}
-  }
-  
+ 

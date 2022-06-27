@@ -1,42 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
-    <title>Brodeco Datos de contacto</title>
-    <link rel="stylesheet" href="../css/pruebasass.css">
-   </head>
-   <body>
-    <header>
-      <nav class="navBar">
-        <a href="../index.html"><img class="logo" src="../BroDeco/129016884_102286145073293_2212359157108283822_n.jpg" alt="Logo de la marca">
-        </a>
-        <ul>
-          <li class="fuente30"><a  href="../Contacto/datosdecontacto.html">Contacto</a></li>
-         <li class="fuente30"><a href="../Decoracion/frascos.html">Decoracion</a></li>
-         <li class="fuente30" ><a href="../Textiles/Mantas.html">Mantas</a></li>
-         <li class="fuente30"><a href="../Productos/almohadones.html">Almohadones</a></li>
-         <li class="fuente30"><a href="../difusores/difusores.html">Aromaticos</a></li>
-        <script src="https://kit.fontawesome.com/c633259a8d.js" crossorigin="anonymous"></script> 
-      </ul>
-      <!--fin de la nav--> 
-      </nav>
-      <h2>BroDeco - Tu espacio</h2> 
-  </header> 
-  <!--Fin del header--> 
-  <br><br><br>
- 
-  <div>
-    <h2 class="parrafo">Queremos ayudarte</h2>
+<html lang="es">
 
-    <p class="parrafo">Queres formar parte de nuestro equipo? Te gustaria saber mas detalles de nuestrosproductos? No dudes en contactarnos</p>
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Pagina dedicada a la decoracion del hogar, con productos artesanales">
+  <meta name="keywords" content="deco, home, contaco">
+  <title>Ponte en contacto</title>
+  <link rel="stylesheet" href="../css/pruebasass.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navBar">
+      <div class="contenedor-logo">
+         <a href="../index.html"><img class="logo" src="../BroDeco/129016884_102286145073293_2212359157108283822_n.jpg"
+          alt="Logo de la marca">
+      </a>
+      </div>
+     
+      <ul>
+        <li class="fuente30"><a href="../index.html">Inicio</a></li>
+        <li class="fuente30"><a href="../Contacto/datosdecontacto.html">Contacto</a></li>
+        <li class="fuente30"><a href="../Decoracion/frascos.html">Decoracion</a></li>
+        <li class="fuente30"><a href="../Textiles/Mantas.html">Mantas</a></li>
+        <li class="fuente30"><a href="../Productos/almohadones.html">Almohadones</a></li>
+        <li class="fuente30"><a href="../difusores/difusores.html">Aromaticos</a></li>
+        <script src="https://kit.fontawesome.com/c633259a8d.js" crossorigin="anonymous"></script>
+      </ul>
+      <!--fin de la nav-->
+    </nav>
+    <section class="envios">
+      <div class="container">
+        <div class="row-fluid">
+          <div class="col text-center">
+            <span>
+              Envíos gratis en compras mayores a $12990! Envíos a sucursales de Correo Argentino (todo el país).
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <h1 class="text-center">BroDeco - Tu espacio</h1>
+  </header>
+  <!--Fin del header-->
+  <br><br><br>
+
+  <div>
+    <h2 class="parrafo text-center">Queremos ayudarte</h2>
+
+    <p class="parrafo text-center">Queres formar parte de nuestro equipo? <br> Te gustaria saber mas detalles de nuestros productos? <br> No
+      dudes en contactarnos</p>
     <br><br><br>
   </div>
-    <!--formulario--> 
-    <section>
+  <!--formulario-->
+  <section class="text-center">
     <form action="/action_page.php">
       <fieldset>
         <label class="fuente30" for="Nombre">Nombre</label>
@@ -44,46 +64,49 @@
         <label class="fuente30" for="Email">Email</label>
         <input type="email" id="Email" name="Email" requerido>
         <label class="fuente30" for="Telefono">Telefono</label>
-        <input type="Telefono" name="Telefono" id="Telefono"requerido>
-        
-          <br><br>
-          <!--area clikleable--> 
-          <label class="fuente30" for="Venta mayorista">Venta mayorista</label>
-          <input type= "checkbox" name="Venta mayorista" id="Venta mayorista">
-          <label class="fuente30" for="Envios">Envios</label>
-          <input type="checkbox" name="Envios" id="Envios">
-          <label class="fuente30" for="Trabaja con nosotros">Trabaja con nosotros</label>
-          <input type="checkbox" name="Trabaja con nosotros" id="Trabaja con nosotros">
-        
-     <div>
-        <br><br><br>
-    <!--area de texto--> 
-        <textarea class="parrafo" name="consulta" id="consulta" cols="30" rows="10" placeholder="haz tu consulta aquí"></textarea>
-      </div>
-      <button class="parrafo btn btn-light " type="reset" value="reset">Reset</button>
-      <button class="parrafo btn btn-light" type="reset" value="resert">Enviar</button>
+        <input type="Telefono" name="Telefono" id="Telefono" requerido>
+
+        <br><br>
+        <!--area clikleable-->
+        <label class="fuente30" for="Venta mayorista">Venta mayorista</label>
+        <input type="checkbox" name="Venta mayorista" id="Venta mayorista">
+        <label class="fuente30" for="Envios">Envios</label>
+        <input type="checkbox" name="Envios" id="Envios">
+        <label class="fuente30" for="Trabaja con nosotros">Trabaja con nosotros</label>
+        <input type="checkbox" name="Trabaja con nosotros" id="Trabaja con nosotros">
+
+        <div>
+          <br><br><br>
+          <!--area de texto-->
+          <textarea class="parrafo" name="consulta" id="consulta" cols="30" rows="10"
+            placeholder="haz tu consulta aquí"></textarea>
+        </div>
+        <button class="parrafo btn btn-light " type="reset" value="reset">Reset</button>
+        <button class="parrafo btn btn-light" type="reset" value="resert">Enviar</button>
       </fieldset>
     </form>
-     </div>
-    </section>  
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-  </body>
-<!--footer--> 
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+</body>
+<!--footer-->
 <footer class="site-footer text-white text-center   pt-4 bg-dark">
   <h3>Redes Sociales</h3>
   <div class="iconos">
     <a href="https://www.instagram.com/brodecolp/"><i class="fa-brands fa-instagram"></i></a>
     <a href="https://www.facebook.com/search/top?q=brodeco"><i class="fa-brands fa-facebook"></i></a>
   </div>
- 
+
 </footer>
-    
 
 
 
 
- 
-    
 
- 
-  </html>
+
+
+
+
+</html>

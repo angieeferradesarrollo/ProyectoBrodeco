@@ -1,43 +1,48 @@
 
 
-.navBar{ 
+.navBar
+{ 
    display: flex;
-  justify-content: flex-end;
+   flex-direction: row;
+  justify-content: space-between;
   align-items:center ;
-
-  height: 50px;
+  height: 60px;
   text-align: center;
   left: 0;
   margin: 0px;
   position: relative;
   background-color: $colorNav;
-  font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;}
-
-  /*MIXINS*/
-  @mixin central {
-  
-  }
-  @mixin sizes($width, $height) {
-    height: $height;
-    width: $width;
-  }
- .logo{@include sizes(50px,50px);
- 
-  position: absolute;
+  font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+  .contenedor-logo a{
+	position: relative;
+	top:100px;
+  width: auto;
+  display: flex;
   top: 0px;
+  margin-left: 10px;
+  height: 60px;
+
+  .logo{
+  width: 60px;
+  height: 60px;
+  margin-left: 10px;
   border-radius: 15px;
-  z-index: 100px;
-  left: 700px;
-  margin-top: 0%;
-  
 }
- .fuente30{
+
+}
+
+
+
+.fuente30{
   font-size: 15px;
   background-color: transparent;
   border-radius: 20px;
-  font-family: $Tipografia;
   text-decoration-color: gray;
 } 
+}
+
+ 
+
 
 
 
@@ -46,3 +51,8 @@
  li{ 
   display: inline; margin: 0 15px;
 }
+ /*MIXINS*/
+  @mixin central {
+  
+  }
+ 

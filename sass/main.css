@@ -7,6 +7,7 @@
 
 p::first-letter {
   color: black;
+  font-size: x-large;
 }
 
 html {
@@ -23,8 +24,11 @@ a:visited {
   color: gray;
 }
 
+a:hover {
+  color: white;
+}
+
 body {
-  font-family: Roboto, Helvetica, Arial, sans-serif;
   font-weight: 100px;
 }
 
@@ -46,8 +50,9 @@ a {
 
 .parrafo {
   justify-content: center;
+  font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
   margin-top: 50px;
-  color: #ecdfdb;
+  color: grey;
 }
 
 /*---------- FOOTER ----------*/
@@ -58,14 +63,17 @@ a {
 
 .carousel-inner img {
   width: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 500px;
 }
 
 .navBar {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  height: 50px;
+  height: 60px;
   text-align: center;
   left: 0;
   margin: 0px;
@@ -73,24 +81,25 @@ a {
   background-color: #ecdfdb;
   font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
 }
-
-/*MIXINS*/
-.logo {
-  height: 50px;
-  width: 50px;
-  position: absolute;
+.navBar .contenedor-logo a {
+  position: relative;
+  top: 100px;
+  width: auto;
+  display: flex;
   top: 0px;
-  border-radius: 15px;
-  z-index: 100px;
-  left: 700px;
-  margin-top: 0%;
+  margin-left: 10px;
+  height: 60px;
 }
-
-.fuente30 {
+.navBar .contenedor-logo a .logo {
+  width: 60px;
+  height: 60px;
+  margin-left: 10px;
+  border-radius: 15px;
+}
+.navBar .fuente30 {
   font-size: 15px;
   background-color: transparent;
   border-radius: 20px;
-  font-family: Roboto, Helvetica, Arial, sans-serif;
   -webkit-text-decoration-color: gray;
           text-decoration-color: gray;
 }
@@ -100,6 +109,7 @@ li {
   margin: 0 15px;
 }
 
+/*MIXINS*/
 .contenedor {
   width: 100%;
   max-width: 1300px;
@@ -224,10 +234,6 @@ li {
 }
 
 /*IF*/
-p {
-  color: Roboto, Helvetica, Arial, sans-serif;
-}
-
 .site-footer {
   height: 100px;
 }
@@ -239,133 +245,18 @@ p {
   font-size: 20px;
 }
 
-.icons a i :hover {
+.icons a :hover {
   color: rgb(255, 136, 0);
   transform: scale(1.1);
   transition: ease-in-out 0.1s;
 }
 
-/*Media querie*/
-@media screen and (min-width: 1200px) {
-  .navbar {
-    justify-content: end;
-    text-align: end;
-    top: 0x;
-    left: 0;
-    display: flex;
-    left: 0px;
-    margin: 0px;
-    position: relative;
-    background-color: white;
-    font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
-  }
+.envios {
+  background-color: grey;
+  color: aliceblue;
 }
-@media only screen and (min-width: 600px) {
-  .navbar {
-    justify-content: end;
-    text-align: end;
-    top: 0x;
-    left: 0;
-    display: flex;
-    left: 0px;
-    margin: 0px;
-    position: relative;
-    background-color: white;
-    font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
-  }
-}
-@media screen and (max-width: 480px) {
-  .header {
-    flex-direction: column;
-  }
 
-  .navBar {
-    justify-content: end;
-  }
-
-  .logo {
-    justify-content: start;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .logo {
-    justify-content: start;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .column {
-    float: left;
-    width: 33.33%;
-    padding: 100px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .column {
-    width: 33.33%;
-    padding: 50px;
-  }
-}
-/*mis media queries- min-width: desde/ / max-width: hasta*/
-@media screen and (min-width: 1200px) {
-  .contenedor {
-    background-color: white;
-    grid-template-areas: " header         header      header	" "	destacado	destacado 	destacado" "	contenido	contenido 	aside " "	 footer		footer 		footer";
-  }
-}
-@media screen and (max-width: 480px) {
-  .contenedor {
-    grid-template-columns: 1fr;
-    grid-template-areas: "destacado" "contenido " "aside" "footer";
-  }
-}
-/*animaciones*/
-@-webkit-keyframes logo-animacion {
-  0% {
-    width: 100px;
-  }
-  25% {
-    width: 300px;
-  }
-  50% {
-    width: 200px;
-  }
-  75% {
-    width: 300px;
-  }
-  100% {
-    width: 100px;
-  }
-}
-@keyframes logo-animacion {
-  0% {
-    width: 100px;
-  }
-  25% {
-    width: 300px;
-  }
-  50% {
-    width: 200px;
-  }
-  75% {
-    width: 300px;
-  }
-  100% {
-    width: 100px;
-  }
-}
-@-webkit-keyframes scale-up-center {
-  0% {
-    transform: scale(0.5);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-@keyframes scale-up-center {
-  0% {
-    transform: scale(0.5);
-  }
-  100% {
-    transform: scale(1);
-  }
+h1 {
+  color: rgb(33, 22, 9);
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */
