@@ -1,12 +1,13 @@
 
 p::first-letter{
   color: black;
-  font-size:x-large;
+  font-size: 20px;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
 
 /*Pseudo-element*/
+
 h4::before{
   content: " $ ";
   }
@@ -27,7 +28,7 @@ h4::before{
   }
   
   a {color: bisque;
-    text-decoration: none;
+    text-decoration: underline;
   }
   .parrafo{
     justify-content: center;

@@ -6,10 +6,7 @@
 
 p::first-letter {
   color: black;
-  font-size: x-large; }
-
-html {
-  height: 100px; }
+  font-size: 20px; }
 
 /*Pseudo-element*/
 h4::before {
@@ -22,9 +19,6 @@ a:visited {
 a:hover {
   color: white; }
 
-body {
-  font-weight: 100px; }
-
 .img {
   height: 100px;
   border-radius: 15px; }
@@ -35,7 +29,8 @@ img {
   object-fit: cover; }
 
 a {
-  text-decoration: none; }
+  color: bisque;
+  text-decoration: underline; }
 
 .parrafo {
   justify-content: center;
@@ -53,17 +48,31 @@ a {
   object-fit: cover;
   height: 500px; }
 
+.site-footer {
+  height: 100px; }
+
+.icons a {
+  text-decoration: none;
+  color: bisque;
+  margin: 10px;
+  font-size: 20px; }
+
+.icons a :hover {
+  color: black;
+  transform: scale(1.1);
+  transition: ease-in-out .1s; }
+
 .navBar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 60px;
+  height: 0px;
   text-align: center;
   left: 0;
-  margin: 0px;
+  margin: 30px;
   position: relative;
-  background-color: #ecdfdb;
+  background-color: silver;
   font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif; }
   .navBar .contenedor-logo a {
     position: relative;
@@ -74,10 +83,11 @@ a {
     margin-left: 10px;
     height: 60px; }
     .navBar .contenedor-logo a .logo {
-      width: 60px;
-      height: 60px;
+      width: 100px;
+      height: 100px;
       margin-left: 10px;
-      border-radius: 15px; }
+      border-radius: 15px;
+      object-fit: cover; }
   .navBar .fuente30 {
     font-size: 15px;
     background-color: transparent;
@@ -194,20 +204,6 @@ li {
     align-items: center; }
 
 /*IF*/
-.site-footer {
-  height: 100px; }
-
-.icons a {
-  text-decoration: none;
-  color: bisque;
-  margin: 10px;
-  font-size: 20px; }
-
-.icons a :hover {
-  color: #ff8800;
-  transform: scale(1.1);
-  transition: ease-in-out .1s; }
-
 .envios {
   background-color: #a3a3a3;
   color: aliceblue; }
