@@ -77,33 +77,3 @@
       
   }
   
-  /*animaciones*/
-  @keyframes logo-animacion{
-      0%{ width: 100px;}
-      
-      25%{ width:300px;}
-      50%{ width: 200px;}
-      75%{ width: 300px;}
-      100%{ width: 100px;}
-  }
-      
-  @-webkit-keyframes scale-up-center {
-      0% {
-        -webkit-transform: scale(0.5);
-                transform: scale(0.5);
-      }
-      100% {
-        -webkit-transform: scale(1);
-                transform: scale(1);
-      }
-    }
-    @keyframes scale-up-center {
-      0% {
-        -webkit-transform: scale(0.5);
-                transform: scale(0.5);
-      }
-      100% {
-        -webkit-transform: scale(1);
-                transform: scale(1);
-      }
-    }

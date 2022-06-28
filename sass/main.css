@@ -10,10 +10,6 @@ p::first-letter {
   font-size: x-large;
 }
 
-html {
-  height: 100px;
-}
-
 /*Pseudo-element*/
 h4::before {
   content: " $ ";
@@ -26,10 +22,6 @@ a:visited {
 
 a:hover {
   color: white;
-}
-
-body {
-  font-weight: 100px;
 }
 
 .img {
@@ -45,6 +37,7 @@ img {
 }
 
 a {
+  color: bisque;
   text-decoration: none;
 }
 
@@ -68,17 +61,34 @@ a {
   height: 500px;
 }
 
+.site-footer {
+  height: 100px;
+}
+
+.icons a {
+  text-decoration: none;
+  color: bisque;
+  margin: 10px;
+  font-size: 20px;
+}
+
+.icons a :hover {
+  color: black;
+  transform: scale(1.1);
+  transition: ease-in-out 0.1s;
+}
+
 .navBar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 60px;
+  height: 0px;
   text-align: center;
   left: 0;
-  margin: 0px;
+  margin: 30px;
   position: relative;
-  background-color: #ecdfdb;
+  background-color: silver;
   font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
 }
 .navBar .contenedor-logo a {
@@ -92,7 +102,7 @@ a {
 }
 .navBar .contenedor-logo a .logo {
   width: 60px;
-  height: 60px;
+  height: 80px;
   margin-left: 10px;
   border-radius: 15px;
 }
@@ -234,25 +244,8 @@ li {
 }
 
 /*IF*/
-.site-footer {
-  height: 100px;
-}
-
-.icons a {
-  text-decoration: none;
-  color: bisque;
-  margin: 10px;
-  font-size: 20px;
-}
-
-.icons a :hover {
-  color: rgb(255, 136, 0);
-  transform: scale(1.1);
-  transition: ease-in-out 0.1s;
-}
-
 .envios {
-  background-color: grey;
+  background-color: rgb(163, 163, 163);
   color: aliceblue;
 }
 

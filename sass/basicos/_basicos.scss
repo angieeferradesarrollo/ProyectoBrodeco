@@ -3,9 +3,7 @@ p::first-letter{
   color: black;
   font-size:x-large;
 }
-html{
-  height: 100px
-}
+
 @import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
 
 /*Pseudo-element*/
@@ -18,11 +16,6 @@ h4::before{
   }
   a:hover{color:white
   }
-  body {
-  
-    font-weight: 100px;
-    
-  }
   .img{ height: 100px;
 	
     border-radius: 15px;}
@@ -33,7 +26,7 @@ h4::before{
     object-fit: cover;
   }
   
-  a {
+  a {color: bisque;
     text-decoration: none;
   }
   .parrafo{
@@ -56,8 +49,30 @@ text-align: center;
 	width: 300px;
     object-fit: cover;
 	height: 500px;
-
+  
  
 
   
+  }
+  $color: grey;
+  p{
+	@if ($color == black) {
+		color:grey
+	} 
+	}
+  
+  
+  .site-footer{
+	height: 100px;
+  }
+  .icons a{
+	text-decoration: none;
+	color: bisque;
+	margin: 10px;
+	font-size: 20px;
+  }
+  .icons a :hover{
+	color:black;
+	transform: scale(1.1);
+	transition: ease-in-out .1s;
   }
