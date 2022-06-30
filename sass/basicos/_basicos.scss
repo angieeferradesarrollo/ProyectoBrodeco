@@ -1,7 +1,8 @@
 
 p::first-letter{
   color: black;
-  font-size: 20px;
+  font-size: 15px;
+  line-height: 1.2;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
@@ -77,3 +78,4 @@ text-align: center;
 	transform: scale(1.1);
 	transition: ease-in-out .1s;
   }
+  

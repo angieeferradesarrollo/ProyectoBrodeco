@@ -1,12 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap");
 * {
-  margin: o;
+  margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
 p::first-letter {
   color: black;
-  font-size: 20px; }
+  font-size: 15px;
+  line-height: 1.2; }
 
 /*Pseudo-element*/
 h4::before {
@@ -85,7 +86,7 @@ a {
     .navBar .contenedor-logo a .logo {
       width: 100px;
       height: 100px;
-      margin-left: 10px;
+      margin-left: 0px;
       border-radius: 15px;
       object-fit: cover; }
   .navBar .fuente30 {
@@ -175,7 +176,7 @@ li {
     height: 20em;
     width: 20em;
     margin-bottom: 25px; }
-  .sidebar .articulo.destacado .contenedor-thumbnail {
+  .sidebar .articulo .destacado .contenedor-thumbnail {
     min-height: 40%;
     width: 0%; }
 
@@ -188,6 +189,31 @@ li {
   display: grid;
   grid-template-columns: 1.8fr 1.8fr; }
 
+._hero {
+  display: flex;
+  max-width: 100%;
+  height: 60vh;
+  background-image: url(../BroDeco/canvahero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left; }
+  ._hero .wrap {
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left; }
+    ._hero .wrap .box {
+      flex-basis: 50%;
+      text-align: left;
+      align-self: center; }
+
+span {
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 300; }
+
 .cardContainer {
   padding: 50px;
   display: flex;
@@ -195,7 +221,7 @@ li {
   flex-wrap: wrap; }
   .cardContainer .card {
     width: 300px;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
     margin: 30px;
     background-color: white;
     display: flex;
@@ -206,8 +232,18 @@ li {
 /*IF*/
 .envios {
   background-color: #a3a3a3;
-  color: aliceblue; }
+  color: aliceblue;
+  padding-top: 0%; }
 
 h1 {
   color: #211609;
-  align-items: center; }
+  align-items: center;
+  line-height: .9;
+  padding-bottom: 10px; }
+
+.img-fluid {
+  width: 300px;
+  border: solid 2px white; }
+
+.fondo-frascos {
+  background-image: url(../Decoracion/imagines-frascos/fondo1.png); }

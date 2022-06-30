@@ -99,7 +99,7 @@
   width: 20em; 
   margin-bottom: 25px; 
 }
-.articulo.destacado .contenedor-thumbnail {
+.articulo .destacado .contenedor-thumbnail {
   min-height: 40%;
   width: 0%;
   
@@ -115,4 +115,34 @@ text-align: center;
   display: grid;
   grid-template-columns: 1.8fr 1.8fr;
 }
+._hero{
+	display: flex;
+	max-width: 100%;
+	height: 60vh;
+	background-image: url(../BroDeco/canvahero.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: left;
+  .wrap{
+	max-width: 1000px;
+	margin: 0 auto;
+	height: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: left;
+  .box{
+	flex-basis: 50%;
+	text-align: left;
+	align-self: center;
+  }
+  }
+  }
+  
+  
+  span{
+	font-size: 18px;
+	letter-spacing: 2px;
+	font-weight: 300;
 
+  }
+  
