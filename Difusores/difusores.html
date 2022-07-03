@@ -12,23 +12,65 @@
   <link rel="stylesheet" href="../css/pruebasass.css">
 </head>
 <body>
-  <nav class=" navBar">
-    <div class="contenedor-logo">
-      <a href="../index.html"><img class="logo" src="../BroDeco/129016884_102286145073293_2212359157108283822_n.jpg"
-       alt="Logo de la marca">
-   </a>
-   </div>
-    <ul>
-        <li class="fuente30"><a href="../index.html">Inicio</a></li>
-        <li class="fuente30"><a  href="../Contacto/datosdecontacto.html">Contacto</a></li>
-        <li class="fuente30"><a href="../Decoracion/frascos.html">Decoracion</a></li>
-        <li class="fuente30" ><a href="../Textiles/Mantas.html">Mantas</a></li>
-        <li class="fuente30"><a href="../Productos/almohadones.html">Almohadones</a></li>
-        <li class="fuente30"><a href="difusores.html">Aromaticos</a></li>
-        <script src="https://kit.fontawesome.com/c633259a8d.js" crossorigin="anonymous"></script> 
-      </ul>
+  <nav class="navbar bg-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">Brodeco</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">BroDeco</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../Contacto/datosdecontacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../Decoracion/frascos.html">Decoración</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../Textiles/Mantas.html">Mantas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../Productos/almohadones.html">Almohadones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./difusores.html">Aromaticos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
   </nav>
-  <section class="envios">
+ 
+  <br><br><br>
+   <section class="envios">
     <div class="container">
       <div class="row-fluid">
         <div class="col text-center">
@@ -39,17 +81,16 @@
       </div>
     </div>
     </section>
-  <br>
- 
   
 <!--FIN DE LA NAV-->
 <header class="contenedor">
-<article class="articulo destacado">
+ 
+<article class="articul destacad">
   <div class="contenedor-texto">
     <div>
-      <h2 class="titulo"><a href="#">Nuestros difusores</a></h2>
+      <h2 class="titulo text-center"><a href="#">Nuestros difusores</a></h2>
     </div>
-    <p class="extracto">
+    <p class="extracto text-center">
       AROMAS PARA TU ROPA
   </div>
 
