@@ -102,8 +102,8 @@ a {
   height: 60px;
 }
 .navBar .contenedor-logo a .logo {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   margin-left: 0px;
   border-radius: 15px;
   -o-object-fit: cover;
@@ -296,4 +296,13 @@ h1 {
 
 .fondo-frascos {
   background-image: url(../Decoracion/imagines-frascos/fondo1.png);
+}
+
+.logo-img {
+  width: 100px;
+}
+
+.bg-light {
+  background-color: transparent;
+  fill-opacity: 0;
 }/*# sourceMappingURL=main.css.map */

@@ -13,22 +13,49 @@
 </head>
    <body>
     
-    <nav class="navBar">
-      <div class="contenedor-logo">
-        <a href="../index.html"><img class="logo" src="../BroDeco/129016884_102286145073293_2212359157108283822_n.jpg"
-         alt="Logo de la marca">
-     </a>
-     </div> 
-      <ul>
-          <li class="fuente30"><a href="../index.html">Inicio</a></li>
-          <li class="fuente30"><a  href="../Contacto/datosdecontacto.html">Contacto</a></li>
-          <li class="fuente30"><a href="../Decoracion/frascos.html">Decoracion</a></li>
-          <li class="fuente30" ><a href="../Textiles/Mantas.html">Mantas</a></li>
-          <li class="fuente30"><a href="../Productos/almohadones.html">Almohadones</a></li>
-          <li class="fuente30"><a href="../Difusores/difusores.html">Aromaticos</a></li>
-          <script src="https://kit.fontawesome.com/c633259a8d.js" crossorigin="anonymous"></script> 
-        </ul>
-  </nav>
+    <nav class="navbar bg-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">Bro | deco</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Bro | Deco</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../Contacto/datosdecontacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../Decoracion/frascos.html">Decoración</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../Textiles/Mantas.html">Mantas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../Productos/almohadones.html">Almohadones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./difusores.html">Aromaticos</a>
+              </li>
+  
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+  <br><br><br>
+  <!--INFORMACION CUOTAS-->
+  
   <section class="envios">
     <div class="container">
       <div class="row-fluid">
@@ -40,11 +67,10 @@
       </div>
     </div>
   </section>
-  <!--INFORMACION CUOTAS-->
-  <h1 class="text-center">BroDeco - Tu espacio</h1>
-  <br><br><br><br>
-  <div class="row-fluid"><img src="../BroDeco/cuotas.webp" alt=""></div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <div class="contenerdor-logo text-center">
+    <img class="logo-img-logo text-center" src="../BroDeco/My project (4).jpg" alt="">
+</div>
+  
 <header>
   <!--SECCION PRODUCTOS-->
   <main class=" container text-center mb-4 mt-5"">
@@ -70,7 +96,7 @@
       </div>
       <div class="items col-12 col-md-4 col-lg-4">
        
-        <img class="img-fluid" src="./Img-mantas/SELVAGRIS.jpg" alt="Manta waffle gris">
+        <img class="img-fluid" src="./Img-mantas/img_93151-456181c887f56b6d3216298361574987-1024-1024_adobe_express.jpeg" alt="Manta waffle gris">
         <p>Manta Selva</p>
         <button type="button" class="btn btn-light">Comprar</button>
       </div>
@@ -82,13 +108,13 @@
       </div>
       <div class="items col-12 col-md-4 col-lg-4">
         
-        <img class="img-fluid" src="./Img-mantas/FOIXÁ.jpg" alt="Manta nórdica">
+        <img class="img-fluid" src="./Img-mantas/FOIXÁ_adobe_express.jpeg" alt="Manta nórdica">
         <p>Manta Foixá</p>
         <button type="button" class="btn btn-light">Comprar</button>
       </div>
       <div class="items col-12 col-md-4 col-lg-4">
        
-        <img class="img-fluid" src="./Img-mantas/SELVAGRIS.jpg" alt="Manta waffle gris">
+        <img class="img-fluid" src="./Img-mantas/SELVAGRIS_adobe_express.jpeg" alt="Manta waffle gris">
         <p>Manta Selva</p>
         <button type="button" class="btn btn-light">Comprar</button>
       </div>
@@ -106,19 +132,49 @@
       </div>
     </section>
   </main>
- 
+ <!--FIN SECCION PRODUCTOS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   
 </header>
    </body>
-
-    <!--footer-->
-    <footer class="site-footer text-white text-center bg-dark pt-4">
-      <h3>Redes Sociales</h3>
-      <div class="iconos">
-        <a href="https://www.instagram.com/brodecolp/">
-          <i class="fa-brands fa-instagram"></i>
-        </a>
-        <a href="https://www.facebook.com/search/top?q=brodeco"><i class="fa-brands fa-facebook"></i></a>
-      </div>
-    </footer>
+<hr>
+   <!--footer-->
+   <div class="row element-footer">
+    <footer class="bg-light">
+    <div class="col text-center">
+<ul class=" text-center">
+<li class="contact-item list-unstyled"><br>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+<path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+</svg>
+<br>
+<a href="https://wa.me/5492215384484"><span>+5492215384484</span>
+</a>
+<br>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cursor" viewBox="0 0 16 16">
+<path d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103zM2.25 8.184l3.897 1.67a.5.5 0 0 1 .262.263l1.67 3.897L12.743 3.52 2.25 8.184z"/>
+</svg>
+<br> 
+<a href="https://www.instagram.com/direct/t/340282366841710300949128413580828380307">
+<span>Mensaje Directo</span>
+</a>
+<br>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+<path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+</svg>
+<br>
+<a href="mailto:Agusbrownie@hotmail.com">
+<span>Agusbrownie@hotmail.com</span>
+</a>
+<br>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+<path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+<path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+</svg>
+<br>
+<span class="text-center">La Plata</span> 
+</ul>
+</footer>
+</div>
+<!--fin del footer-->
 </html>
