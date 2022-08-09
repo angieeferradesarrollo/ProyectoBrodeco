@@ -32,11 +32,11 @@ while(contador<10){
 }
 
 /*calculamos el costo de un producto con un 15% de descuento en compras */
-var cantidad;
-var precio;
-var descuento;
-var compra;
-var11 pagar;
+let cantidad;
+let precio;
+let descuento;
+let compra;
+let pagar;
 
 precio = parseFloat(prompt("Ingresar precio"));
 cantidad = parseFloat(prompt("Ingresar cantidad"));
@@ -48,3 +48,32 @@ pagar = compra-descuento;
 console.log("El descuento es: " + descuento);
 
 console.log("El total a pagar es: " + pagar)
+
+/*arrays*/
+class Producto{
+    constructor(nombre, precio){
+        this.nombre = nombre.toUpperCase();
+        this.precio = parseFloat(precio);
+        this.vendido = false;
+    }
+    sumaGanancia() {
+        this.precio = this.precio * 1.40;
+    }
+}
+
+//Declaro un array de productos para almacenar objetos
+
+const productos = [];
+productos.push(new Producto("Almohadon Breda","1020"));
+productos.push(new Producto("Almohadon Vigo","900"));
+productos.push(new Producto("Almohadon Fane","1100"));
+
+//For para modificar a todos
+for (const producto of productos) 
+{
+    producto.sumaGanancia();
+}
+
+console.log(productos[0]);
+console.log(productos[1]);
+console.log(productos[2]);
